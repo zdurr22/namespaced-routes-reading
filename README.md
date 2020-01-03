@@ -96,7 +96,9 @@ maintain and add to the app, so let's add an `/admin` directory under
 
 `mkdir app/controllers/admin`
 
-Now let's move our `stats_controller.rb` into the `/admin` folder.
+Now let's move our `stats_controller.rb` into the `/admin` folder:
+
+`mv app/controllers/stats_controller.rb app/controllers/admin`
 
 When you create a new folder under `/controllers`, Rails will automatically pick
 that up as a `module` and expect you to namespace the controller accordingly. We
